@@ -1,0 +1,36 @@
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 998;
+	.close {
+		color: #fff;
+		position: absolute;
+		right: 30px;
+		top: 20px;
+		font-size: 24px;
+		z-index: 999;
+		opacity: 0.6;
+	}
+	background-color: rgba(0,0,0,0.7);
+	.inner {
+		margin: 0 auto;
+		.carousel-control {
+			top: 15%;
+			bottom: 15%;
+			background: none;
+		}
+		.item {
+			height: 100%;
+			> img {
+				max-height: 80%;
+				margin: 5% auto;
+				max-width: 80%;
+				box-shadow: 0 0 10px #000;
+			}
+		}
+	}
+}
